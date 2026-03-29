@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Parker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    :root {
+      --pico-font-size: 16px;
+    }
+    body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--pico-muted-border-color);
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      margin-bottom: 0.25rem;
+    }
+    header p {
+      color: var(--pico-muted-color);
+      margin-bottom: 1rem;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .section-title {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--pico-muted-color);
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+    .job {
+      margin-bottom: 1.5rem;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .job-tenure {
+      font-size: 0.85rem;
+      color: var(--pico-muted-color);
+    }
+    .job-company {
+      font-size: 0.9rem;
+      color: var(--pico-muted-color);
+      margin: 0.1rem 0 0.4rem;
+    }
+    .job p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    .interests {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .interest-card {
+      flex: 1;
+      min-width: 200px;
+      background: var(--pico-card-background-color);
+      border: 1px solid var(--pico-muted-border-color);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .interest-card:hover {
+      border-color: var(--pico-primary);
+    }
+    .interest-card h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1rem;
+    }
+    .interest-card p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--pico-muted-color);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--pico-muted-border-color);
+      font-size: 0.85rem;
+      color: var(--pico-muted-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mike Parker</h1>
+    <p>Mainframe Systems Manager &middot; Richmond, Virginia</p>
+    <nav class="links">
+      <a href="https://www.linkedin.com/in/mike-parker-73244023/" target="_blank">
+        &#128101; LinkedIn
+      </a>
+      <a href="https://www.qrz.com/db/KB4S" target="_blank">
+        &#128225; KB4S &mdash; HAM Radio
+      </a>
+      <a href="https://app.astrobin.com/u/mikeparker" target="_blank">
+        &#127775; AstroBin &mdash; Amateur Astronomy
+      </a>
+      <a href="https://github.com/mikep63" target="_blank">
+        &#128187; GitHub
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <p class="section-title">About</p>
+    <p>
+      I'm a mainframe systems manager with over 35 years of experience in IBM mainframe environments,
+      specializing in z/OS, automation, networking, and large-scale infrastructure management.
+      Currently leading a worldwide team at Atos supporting Fortune 500 clients.
+      Outside of work I enjoy amateur astronomy and amateur radio (Extra class, KB4S).
+    </p>
+
+    <p class="section-title">Interests</p>
+    <div class="interests">
+      <a class="interest-card" href="https://www.qrz.com/db/KB4S" target="_blank">
+        <h3>HAM Radio &mdash; KB4S</h3>
+        <p>Extra class license. Amateur radio operator.</p>
+      </a>
+      <a class="interest-card" href="https://app.astrobin.com/u/mikeparker" target="_blank">
+        <h3>Amateur Astronomy</h3>
+        <p>Astrophotography and deep-sky observing. View my images on AstroBin.</p>
+      </a>
+    </div>
+
+    <p class="section-title">Career</p>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Mainframe System Manager</p>
+        <span class="job-tenure">Jun 2021 &ndash; Present</span>
+      </div>
+      <p class="job-company">Atos &middot; Remote</p>
+      <p>Lead manager at Atos managing mainframe and zVM environments for Liberty Mutual and Lumen accounts. Managing a worldwide staff of ~50 individuals supporting 60+ LPARs across z/OS, DB2, IMS, CICS, Storage/DASD, Network, software support, and automation teams.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Mainframe zSeries Team Lead</p>
+        <span class="job-tenure">Jan 2015 &ndash; May 2021</span>
+      </div>
+      <p class="job-company">Atos</p>
+      <p>Team mainframe leader for the Hallmark account. Managed daily operations and strategic projects including disaster recovery exercises, z/OS upgrades, and software upgrades.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Infrastructure Management Sr Analyst</p>
+        <span class="job-tenure">Jan 2012 &ndash; Dec 2014</span>
+      </div>
+      <p class="job-company">Xerox</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Infrastructure Management Sr Analyst</p>
+        <span class="job-tenure">Jan 2003 &ndash; Jan 2012</span>
+      </div>
+      <p class="job-company">Affiliated Computer Services</p>
+      <p>Senior system programmer supporting the Hallmark mainframe. Specializing in communication and automation software.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Network System Programmer</p>
+        <span class="job-tenure">Jul 2001 &ndash; Jan 2003</span>
+      </div>
+      <p class="job-company">Anthem</p>
+      <p>Supported the Anthem/SE mainframe network with NCP gens, VTAM, and TCP/IP. Responsible for upgrading and maintaining telecommunication software.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Automation System Engineer</p>
+        <span class="job-tenure">Apr 1991 &ndash; Jun 2001</span>
+      </div>
+      <p class="job-company">Trigon Blue Cross</p>
+      <p>Lead automation programmer responsible for developing system automation for Trigon Blue Cross.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <p class="job-title">Network Control Specialist</p>
+        <span class="job-tenure">Jul 1986 &ndash; Jun 1991</span>
+      </div>
+      <p class="job-company">Blue Cross Blue Shield of Virginia</p>
+      <p>Monitored the mainframe network environment and provided first-level network troubleshooting.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Mike Parker &middot; Richmond, Virginia</p>
+  </footer>
+
+</body>
+</html>
